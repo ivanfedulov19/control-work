@@ -26,3 +26,20 @@ int ChooseElements(string[] array1)
     }
     return count;
 }
+
+string[] MainTask(string[] array1, string[] array2)
+{
+    int index = 0;
+    int i = 0;
+    while (i < array1.Length)
+    {
+        int lenght = array1[i].Length;
+        if (lenght <= 3)
+        {
+            array2[index] = array1[i];
+            index++;
+        }
+        i++;
+    }
+    return array2;
+}
