@@ -43,3 +43,12 @@ string[] MainTask(string[] array1, string[] array2)
     }
     return array2;
 }
+
+string[] PrintArray(string[] array2)
+{
+    for (int i = 0; i < array2.Length; i++)
+    {
+        System.Console.Write(array2[i] + " ");
+    }
+    return array2;
+}
