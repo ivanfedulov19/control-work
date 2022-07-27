@@ -13,3 +13,16 @@ string[] FillArray(string[] array1)
     }
     return array1;
 }
+
+int ChooseElements(string[] array1)
+{
+    int count = 0;
+    for (int i = 0; i < array1.Length; i++)
+    {
+        if (array1[i].Length <= 3)
+        {
+            count++;
+        }
+    }
+    return count;
+}
