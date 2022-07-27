@@ -52,3 +52,12 @@ string[] PrintArray(string[] array2)
     }
     return array2;
 }
+
+Console.Write("Введите размер массива: ");
+int sizeArray = int.Parse(Console.ReadLine());
+string[] inputArray = CreateArray(sizeArray);
+FillArray(inputArray);
+ChooseElements(inputArray);
+string[] outputArray = new string[ChooseElements(inputArray)];
+MainTask(inputArray, outputArray);
+PrintArray(outputArray);
